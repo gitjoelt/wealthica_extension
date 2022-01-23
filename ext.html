@@ -39,6 +39,7 @@
       }).on('update', function (options) {
         // Filters have been updated and Dashboard is passing in updated options
         addonOptions = _.extend(addonOptions, options);
+        console.log(options);
         showAddonData(addonOptions.data);
       });
 
